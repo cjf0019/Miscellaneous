@@ -1,4 +1,7 @@
-The following codes represent the most useful developed Python codes from the disseration work "The role of excited state electron-impact ionization and configuration mixing in the
+Optizing atomic structure for heavy atoms proves tough, particularly for neutral species. The directory "/AtomicPhysics/ParallelizedStructureOpt" provides code for optimizing atomic structure, through a parallelized implementation of the program AUTOSTRUCTURE (cit. https://ui.adsabs.harvard.edu/abs/2016ascl.soft12014B/abstract, written by Nigel Badnell). Structure optimization of lambda parameters, max one per orbital, can be done either with L-BFGS-B or from a brute force calculation across a parameter grid. The cost function contour, for both energy and A-value optimization separately, can be further graphed (graph.py) for a more comprehensive view of the optimization process. The user can specify the number of workers as the number of concurrent AUTOSTRUCTURE runs at one time and can be run on HPC clusters. 
+
+
+In addition, the following codes represent the most useful developed Python codes from the dissertation work "The role of excited state electron-impact ionization and configuration mixing in the
 population modeling of neutral Ne and W in fusion-capable plasmas using large-scale R-matrix collisional data". Broadly, they represent a suite of programs for handling large-scale R-matrix and generalized collisional radiative modeling calculations. They can be found in the "/AtomicPhysics" subdirectory:
 
 1. pystgsig.py: Extract cross sections from an OMEGA file, given initial and final transition
